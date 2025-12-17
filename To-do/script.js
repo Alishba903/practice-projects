@@ -22,12 +22,25 @@ function displayTasks() {
     const deleteBtn = document.createElement("button");
     deleteBtn.textContent = "Delete";
 
+    const editBtn = document.createElement("button");
+    editBtn.textContent = "Edit";
+
+    editBtn.addEventListener("click", ()=>{
+      const newTask = prompt("Edit task:", tasks[i]);
+
+      if(newTask !== null && newTask.trim() !== ""){
+        tasks[i] = newTask;
+        displayTasks();
+      }
+    })
+
     deleteBtn.addEventListener("click", () => {
       tasks.splice(i, 1);
       displayTasks();
     });
 
-    li.appendChild(deleteBtn);
     taskList.appendChild(li);
+    li.appendChild(editBtn);
+    li.appendChild(deleteBtn);
   }
 }
