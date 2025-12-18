@@ -4,43 +4,77 @@ const taskList = document.getElementById("taskList");
 
 let tasks = [];
 
-addBtn.addEventListener("click", ()=>{
-  const task = taskInput.value;
-  tasks.push(task);
-  taskInput.value = "";
+// Load from localStorage if exists.
+if (localStorage.getItem("to-dos")) {
+  tasks = JSON.parse(localStorage.getItem("to-dos"));
+}
 
-  displayTasks();
+// Render UI immediately
+displayTasks();
+
+addBtn.addEventListener("click", () => {
+  const task = taskInput.value.trim();
+  if (task === "") return;
+
+  // 1. Update array
+    tasks.push(task);
+    
+    // 2. Save to localStorage
+    localStorage.setItem("to-dos", JSON.stringify(tasks));
+    
+    // 3. Update UI
+    displayTasks();
+
+    taskInput.value = ""; // clear input
 });
 
 function displayTasks() {
-  taskList.innerHTML = ""; 
+  taskList.innerHTML = ""; // clear previous UI
 
-  for (let i = 0; i < tasks.length; i++) {
-    const li = document.createElement("li");
-    li.textContent = tasks[i];
+  tasks.forEach((task, i) => {
+    let li = document.createElement("li");
+    li.textContent = task;
 
-    const deleteBtn = document.createElement("button");
-    deleteBtn.textContent = "Delete";
-
-    const editBtn = document.createElement("button");
+    let editBtn = document.createElement("button");
     editBtn.textContent = "Edit";
+    editBtn.className = "edit-btn";
 
-    editBtn.addEventListener("click", ()=>{
-      const newTask = prompt("Edit task:", tasks[i]);
+    let deleteBtn = document.createElement("button");
+    deleteBtn.textContent = "Delete";
+    deleteBtn.className = "delete-btn";
 
-      if(newTask !== null && newTask.trim() !== ""){
-        tasks[i] = newTask;
-        displayTasks();
-      }
-    })
-
-    deleteBtn.addEventListener("click", () => {
-      tasks.splice(i, 1);
-      displayTasks();
-    });
-
-    taskList.appendChild(li);
     li.appendChild(editBtn);
     li.appendChild(deleteBtn);
-  }
+    taskList.appendChild(li);
+  });
 }
+
+
+
+// event delegation 
+taskList.addEventListener("click", function(event) {
+  // Get the clicked element
+  const target = event.target;
+
+  // Edit button clicked
+  if (target.classList.contains("edit-btn")) {
+    // Find index of li
+    const i = Array.from(taskList.children).indexOf(target.parentElement);
+
+    const newTask = prompt("Edit task:", tasks[i]);
+    tasks[i] = newTask;
+
+    localStorage.setItem("to-dos", JSON.stringify(tasks));
+    displayTasks();
+  }
+
+  // Delete button clicked
+  else if (target.classList.contains("delete-btn")) {
+    const i = Array.from(taskList.children).indexOf(target.parentElement);
+
+    tasks.splice(i, 1);
+    localStorage.setItem("to-dos", JSON.stringify(tasks));
+    displayTasks();
+  }
+});
+
