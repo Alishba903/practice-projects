@@ -1,16 +1,24 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-do</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>TO DD</h1>
-    <input type="text" id="taskInput" placeholder="Enter your task">
-    <button id="addBtn">Add Task</button>
-    <ul id="taskList"></ul>
-    <script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do (19.04.2026)</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="header">
+      <img src="/image/img.jpg" alt="" />
+      
+      <div class="todos">
+        <h1 class="heading">TODO</h1>
+        <div class="input-container">
+        <input class="input-el" type="text" placeholder="Add a task..." id="input-el" />
+        <button id="add-btn">+</button>
+        </div>
+        <ul id="tasks-list"></ul>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
 </html>

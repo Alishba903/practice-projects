@@ -1,0 +1,133 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #141414;
+  font-family: 'Segoe UI', sans-serif;
+  color: #eaeaea;
+}
+
+.header {
+  position: relative;   /* important: makes children position relative to image */
+  height: 35vh;         /* 35% of screen height */
+}
+
+.header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;    /* keeps image nice */
+  filter: brightness(0.5);
+}
+
+.todos {
+  width: 480px;
+  max-height: 500px;
+
+  position: absolute;
+  top: 35%;              /* adjust this to place it where you want */
+  left: 50%;
+  transform: translateX(-50%); /* ONLY horizontal centering */
+
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(12px);           /*🔥 modern UI */
+  color: white;
+
+  border-radius: 12px;
+  padding: 20px;
+
+  box-shadow: 0 12px 40px rgba(0,0,0,0.6);
+}
+
+.heading{
+  margin-bottom: 12px;
+  letter-spacing: 10px;
+}
+
+.input-container {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.input-el{
+  flex: 1;
+  height: 42px;
+
+  outline: none;
+  padding: 0 12px;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 2px;
+
+  background: rgba(255, 255, 255, 0.04);
+  color: #eaeaea;
+
+  transition: 0.2s ease;
+}
+
+.input-el::placeholder{
+  color: #aaa;
+}
+
+.input-el:focus{
+  border-color: rgba(120, 160, 255, 0.6);
+  box-shadow: 0 0 0 2px rgba(120, 160, 255, 0.2);
+}
+
+#add-btn{
+  width: 48px;
+  height: 42px;
+
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.06);
+  color: #eaeaea;
+
+  cursor: pointer;
+  transition: all 0.2s ease;
+  backdrop-filter: blur(6px);
+}
+
+#add-btn:hover{
+  background: rgba(255, 255, 255, 0.12);
+  transform: translateY(-1px);
+}
+
+#tasks-list {
+  background: rgba(255, 255, 255, 0); 
+
+  list-style: none;
+
+  max-height: 350px;
+  overflow-y: auto;
+}
+
+.task{
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 2px;
+
+  padding: 12px 14px;
+  margin-bottom: 6px;
+
+  transition: 0.2s ease;
+}
+
+.task:hover{
+  background: rgba(255, 255, 255, 0.08);
+  cursor: pointer;
+}
+
+#tasks-list::-webkit-scrollbar{
+  width: 6px;
+}
+
+#tasks-list::-webkit-scrollbar-thumb{
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
