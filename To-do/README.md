@@ -5,8 +5,6 @@ A simple web-based to-do list application built with HTML, CSS, and JavaScript.
 ## Features
 
 - Add new tasks
-- Mark tasks as completed
-- Delete tasks
 
 ## How to Run
 
