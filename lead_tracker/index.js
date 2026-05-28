@@ -5,6 +5,7 @@ const inputBtn = document.getElementById("input-btn");
 const ulEl = document.getElementById("ul-el");
 const deleteBtn = document.getElementById("delete-btn");
 const tabBtn = document.getElementById("tab-btn");
+const message = document.getElementById("message")
 
 const leadsFromLocalStorage = JSON.parse( localStorage.getItem("myLeads") );
 
@@ -41,6 +42,10 @@ deleteBtn.addEventListener("dblclick", function(){
 })
 
 inputBtn.addEventListener("click", function () {
+  if(inputEl.value.trim() === ""){
+    message.textContent = "Please enter something!"
+    return;
+  }
   myLeads.push(inputEl.value);
   inputEl.value = "";
   localStorage.setItem("myLeads", JSON.stringify(myLeads) );
