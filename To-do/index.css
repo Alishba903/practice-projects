@@ -96,6 +96,7 @@ body {
 
 #add-btn:hover{
   background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(120, 160, 255, 0.6);
   transform: translateY(-1px);
 }
 
@@ -115,6 +116,9 @@ body {
   padding: 12px 14px;
   margin-bottom: 6px;
 
+  display: flex;
+  justify-content: space-between;
+
   transition: 0.2s ease;
 }
 
@@ -130,4 +134,26 @@ body {
 #tasks-list::-webkit-scrollbar-thumb{
   background: rgba(255, 255, 255, 0.2);
   border-radius: 10px;
+}
+
+.del-btn{
+  font-size: 16px;
+
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(22px);
+  border: none;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease; 
+
+}
+
+.del-btn:hover{
+  box-shadow: 
+    0 0 15px rgba(120, 160, 255, 0.6), 
+    0 0 35px rgba(120, 160, 255, 0.6), 
+    inset 0 0 15px rgba(120, 160, 255, 0.8);
+  transform: translateY(-2px);;
 }
