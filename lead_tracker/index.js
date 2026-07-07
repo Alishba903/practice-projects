@@ -36,7 +36,7 @@ tabBtn.addEventListener("click", function(){
 })
 
 deleteBtn.addEventListener("dblclick", function(){
-  localStorage.clear();
+  localStorage.removeItem("myLeads");
   myLeads = [];
   render(myLeads);
 })
