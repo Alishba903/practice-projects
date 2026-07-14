@@ -1,0 +1,65 @@
+{
+  "status": "success",
+  "data": {
+    "study": [
+      { "quote": "Learning never exhausts the mind.", "author": "Leonardo da Vinci" },
+      { "quote": "The expert in anything was once a beginner.", "author": "Helen Hayes" },
+      { "quote": "Education is the most powerful weapon which you can use to change the world.", "author": "Nelson Mandela" },
+      { "quote": "An investment in knowledge pays the best interest.", "author": "Benjamin Franklin" },
+      { "quote": "The beautiful thing about learning is nobody can take it away from you.", "author": "B.B. King" },
+      { "quote": "Live as if you were to die tomorrow. Learn as if you were to live forever.", "author": "Mahatma Gandhi" },
+      { "quote": "The roots of education are bitter, but the fruit is sweet.", "author": "Aristotle" },
+      { "quote": "Learning is a treasure that will follow its owner everywhere.", "author": "Chinese Proverb" },
+      { "quote": "Study without desire spoils the memory.", "author": "Leonardo da Vinci" },
+      { "quote": "Success doesn’t come to you, you go to it.", "author": "Marva Collins" }
+    ],
+    "coding": [
+      { "quote": "Talk is cheap. Show me the code.", "author": "Linus Torvalds" },
+      { "quote": "Programs must be written for people to read, and only incidentally for machines to execute.", "author": "Harold Abelson" },
+      { "quote": "Code is like humor. When you have to explain it, it’s bad.", "author": "Cory House" },
+      { "quote": "First, solve the problem. Then, write the code.", "author": "John Johnson" },
+      { "quote": "Any fool can write code that a computer can understand. Good programmers write code that humans can understand.", "author": "Martin Fowler" },
+      { "quote": "Programming isn’t about what you know; it’s about what you can figure out.", "author": "Chris Pine" },
+      { "quote": "Simplicity is the soul of efficiency.", "author": "Austin Freeman" },
+      { "quote": "Fix the cause, not the symptom.", "author": "Steve Maguire" },
+      { "quote": "The best error message is the one that never shows up.", "author": "Thomas Fuchs" },
+      { "quote": "Before software can be reusable it first has to be usable.", "author": "Ralph Johnson" }
+    ],
+    "creativity": [
+      { "quote": "Creativity takes courage.", "author": "Henri Matisse" },
+      { "quote": "You can’t use up creativity. The more you use, the more you have.", "author": "Maya Angelou" },
+      { "quote": "Imagination is everything. It is the preview of life’s coming attractions.", "author": "Albert Einstein" },
+      { "quote": "To live a creative life, we must lose our fear of being wrong.", "author": "Joseph Chilton Pearce" },
+      { "quote": "Creativity is intelligence having fun.", "author": "Albert Einstein" },
+      { "quote": "The chief enemy of creativity is good sense.", "author": "Pablo Picasso" },
+      { "quote": "You can’t wait for inspiration, you have to go after it with a club.", "author": "Jack London" },
+      { "quote": "Every artist was first an amateur.", "author": "Ralph Waldo Emerson" },
+      { "quote": "Originality is nothing but judicious imitation.", "author": "Voltaire" },
+      { "quote": "The worst enemy to creativity is self-doubt.", "author": "Sylvia Plath" }
+    ],
+    "success": [
+      { "quote": "Success is not final, failure is not fatal: It is the courage to continue that counts.", "author": "Winston Churchill" },
+      { "quote": "Don’t be afraid to give up the good to go for the great.", "author": "John D. Rockefeller" },
+      { "quote": "I find that the harder I work, the more luck I seem to have.", "author": "Thomas Jefferson" },
+      { "quote": "Success usually comes to those who are too busy to be looking for it.", "author": "Henry David Thoreau" },
+      { "quote": "Opportunities don’t happen. You create them.", "author": "Chris Grosser" },
+      { "quote": "Don’t let the fear of losing be greater than the excitement of winning.", "author": "Robert Kiyosaki" },
+      { "quote": "The way to get started is to quit talking and begin doing.", "author": "Walt Disney" },
+      { "quote": "Success is walking from failure to failure with no loss of enthusiasm.", "author": "Winston Churchill" },
+      { "quote": "Fall seven times and stand up eight.", "author": "Japanese Proverb" },
+      { "quote": "The secret of success is to do the common thing uncommonly well.", "author": "John D. Rockefeller Jr." }
+    ],
+    "focus": [
+      { "quote": "It is during our darkest moments that we must focus to see the light.", "author": "Aristotle" },
+      { "quote": "Starve your distractions, feed your focus.", "author": "Unknown" },
+      { "quote": "You can’t depend on your eyes when your imagination is out of focus.", "author": "Mark Twain" },
+      { "quote": "Focus on being productive instead of busy.", "author": "Tim Ferriss" },
+      { "quote": "Where focus goes, energy flows.", "author": "Tony Robbins" },
+      { "quote": "Concentrate all your thoughts upon the work at hand. The sun’s rays do not burn until brought to a focus.", "author": "Alexander Graham Bell" },
+      { "quote": "Lack of direction, not lack of time, is the problem. We all have twenty-four hour days.", "author": "Zig Ziglar" },
+      { "quote": "The successful warrior is the average man, with laser-like focus.", "author": "Bruce Lee" },
+      { "quote": "Focus is the key to success.", "author": "Unknown" },
+      { "quote": "You can do anything, but not everything.", "author": "David Allen" }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "version": "1.0",
+  "name": "Personalized Quote Generator",
+  "description": "Get motivational quotes by category",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["quotes.json"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
