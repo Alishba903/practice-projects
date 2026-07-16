@@ -1,22 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Motivate Me</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Motivational Quotes</h1>
-    <select id="category">
-        <option value="study">📚 Study</option>
-        <option value="coding">💻 Coding</option>
-        <option value="creativity">🎨 Creativity</option>
-        <option value="success">🏆 Success</option>
-        <option value="focus">🎯 Focus</option>
-    </select>
-    <button>Get Quote</button>
-    <p id="quote">Your quote will appear here...</p>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="popup">
+      <h1>Daily Quotes</h1>
+      <p class="subtitle">Stay inspired every day</p>
+      <select id="category">
+        <option value="motivation">Motivation</option>
+        <option value="success">Success</option>
+        <option value="life">Life</option>
+        <option value="study">Study</option>
+      </select>
+      <button>Get Quote</button>
+      <div id="quote-card">
+        <p id="quote" class="placeholder">
+          ✨ Welcome! Choose a category above and click "Get Quote" to get
+          inspired.
+        </p>
+
+        <p id="author"></p>
+      </div>
+    </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

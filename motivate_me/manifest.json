@@ -4,7 +4,8 @@
   "name": "Personalized Quote Generator",
   "description": "Get motivational quotes by category",
   "action": {
-    "default_popup": "index.html"
+    "default_popup": "index.html",
+    "default_icon": "icon.png"
   },
   "web_accessible_resources": [
     {

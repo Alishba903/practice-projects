@@ -15,8 +15,8 @@ button.addEventListener("click", () => {
 
       const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
       
-      document.getElementById("quote").textContent =
-        `"${randomQuote.quote}" — ${randomQuote.author}`;
+      document.getElementById("quote").textContent = `"${randomQuote.quote}"`;
+      document.getElementById("author").textContent = `— ${randomQuote.author}`;
     })
     .catch(err => console.error("Error loading quotes:", err));
 });
